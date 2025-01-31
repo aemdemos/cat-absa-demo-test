@@ -4,8 +4,7 @@
   margin: 0;
   padding: 0;
   display: flex; /* Flexbox to arrange cards side by side */
-  flex-direction: row; /* Ensure cards are side by side */
-  flex-wrap: nowrap; /* Prevent wrapping */
+  flex-flow: row nowrap; /* Ensure cards are side by side */ /* Prevent wrapping */
   gap: 24px; /* Ensure gap is consistent */
 }
 
@@ -53,7 +52,7 @@
   align-items: center;
 }
 
-.absa-cards-wrapper .absa-cards .button:after {
+.absa-cards-wrapper .absa-cards .button::after {
   content: ' \2192'; /* Unicode for right arrow */
   margin-left: 5px;
 }
