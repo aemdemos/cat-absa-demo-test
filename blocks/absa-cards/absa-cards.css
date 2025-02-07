@@ -1,0 +1,69 @@
+
+.absa-cards-wrapper .absa-cards > ul {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping to the next line if necessary */
+  gap: 24px; /* Adjust spacing between cards as necessary */
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+/* Each card (li) should be a flex container */
+.absa-cards-wrapper .absa-cards > ul > li {
+  display: flex;
+  flex-direction: column;
+  width: calc(33.33% - 24px); /* Adjust width and spacing as necessary */
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+  background-color: transparent; /* Remove the background color */
+  border: none; /* Remove the border */
+}
+
+/* Ensure the images take the full width of the card */
+.absa-cards-wrapper .absa-cards-card-image {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+}
+
+.absa-cards-wrapper .absa-cards-card-image picture,
+.absa-cards-wrapper .absa-cards > ul > li img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensure images cover the designated area */
+}
+
+/* Style the text section */
+.absa-cards-wrapper .absa-cards-card-body {
+  display: flex;
+  flex-direction: column; /* Align text content vertically */
+  flex-grow: 1; /* Allow the text section to grow and fill the available space */
+  justify-content: space-between; /* Ensure space between text and button */
+  padding: 10px 16px; /* Adjust padding as necessary */
+}
+
+.absa-cards-wrapper .absa-cards-card-body h5 {
+  margin: 10px 0; /* Adjust margin as necessary */
+  font-size: 1.1em; /* Adjust font size as necessary */
+  font-weight: normal; /* Ensure font weight is consistent */
+}
+
+/* Style the link to match the original image */
+.absa-cards-wrapper .absa-cards-card-body .button-container {
+  margin-top: 10px; /* Ensure some space between text and button */
+  display: flex;
+  align-items: center;
+}
+
+.absa-cards-wrapper .absa-cards-card-body .button-container .button {
+  color: red; /* Change the color to red */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make the text bold */
+  background-color: transparent; /* Remove the blue background */
+  padding: 0; /* Remove padding */
+  display: inline-block; /* Ensure it displays as a link */
+}
+
+.absa-cards-wrapper .absa-cards-card-body .button-container .button::after {
+  content: ' ➔'; /* Add arrow icon */
+  font-size: 1em; /* Adjust the size of the arrow icon */
+}
