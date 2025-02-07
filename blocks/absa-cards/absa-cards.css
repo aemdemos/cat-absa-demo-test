@@ -1,0 +1,53 @@
+
+.absa-cards-wrapper .absa-cards > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between; /* Distribute space evenly between items */
+  gap: 30px; /* Adjust gap between cards */
+}
+
+.absa-cards-wrapper .absa-cards > ul > li {
+  background-color: transparent;
+  border: none;
+  flex: 1; /* Distribute available space equally among items */
+  display: flex;
+  flex-direction: column; /* Ensure items are stacked vertically */
+  align-items: flex-start; /* Align items to the start */
+}
+
+.absa-cards-wrapper .absa-cards-card-image picture, 
+.absa-cards-wrapper .absa-cards-card-image img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+}
+
+.absa-cards-wrapper .absa-cards-card-body {
+  margin-top: 10px; /* Space between image and text */
+  text-align: left; /* Ensure text is left-aligned */
+  margin: 0; /* Remove additional margin */
+  display: flex;
+  flex-direction: column; /* Ensure items are stacked vertically */
+}
+
+.absa-cards-wrapper .absa-cards-card-body h5 {
+  font-size: 1.2em; /* Adjust font size as needed */
+  margin-bottom: 15px; /* Adjust space below the heading */
+}
+
+.absa-cards-wrapper .absa-cards-card-body .button-container {
+  margin-top: 10px; /* Space above the button */
+}
+
+.absa-cards-wrapper .absa-cards-card-body .button {
+  color: red; /* Change color to red */
+  text-decoration: none; /* Remove underline from link */
+  background: none; /* Remove button background */
+  border: none; /* Remove button border */
+  padding: 0; /* Remove button padding */
+  font: inherit; /* Inherit font properties */
+  display: inline-block;
+  margin-top: 5px; /* Adjust space above the link */
+}
